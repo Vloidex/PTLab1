@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 import pytest
 from src.Types import DataType
-from src.TextDataReader import TextDataReader
+from src.XML_TextDataReader import XML_TextDataReader
 
 
 class TestXMLTextDataReader:
@@ -37,5 +37,5 @@ class TestXMLTextDataReader:
         return str(p), file_and_data_content[1]
 
     def test_read(self, filepath_and_data: tuple[str, DataType]) -> None:
-        file_content = TextDataReader().read(filepath_and_data[0])
+        file_content = XML_TextDataReader().read(filepath_and_data[0])
         assert file_content == filepath_and_data[1]
