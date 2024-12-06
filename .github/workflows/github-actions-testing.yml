@@ -4,6 +4,7 @@ on:
   push:
     branches:
       - main
+      - adding-XML
 jobs:
   build:
     runs-on: ubuntu-latest
