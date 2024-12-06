@@ -18,7 +18,7 @@ class XML_TextDataReader(DataReader):
             for subject in student:
                 name_subject = subject.tag
                 score_subject = int(subject.text)
-                score.append(name_subject, score_subject)
+                score.append((name_subject, score_subject))
             self.students[fio] = score
 
         return self.students
