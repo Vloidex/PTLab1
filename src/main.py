@@ -6,6 +6,7 @@ from CalcRating import CalcRating
 from XML_TextDataReader import XML_TextDataReader
 from QuartileRating import QuartileRating
 
+
 def get_path_from_arguments(args) -> str:
     parser = argparse.ArgumentParser(description="Path to datafile")
     parser.add_argument(
