@@ -5,6 +5,7 @@ on:
     branches:
       - main
       - adding-XML
+      - adding-QuartileRating
 jobs:
   build:
     runs-on: ubuntu-latest
