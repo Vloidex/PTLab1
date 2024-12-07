@@ -26,7 +26,7 @@ class TestQuartileRating:
     def test_init_quartile_rating(
             self, input_data: tuple[RatingsType, RatingsType]) -> None:
         quartile_rating = QuartileRating(input_data[0])
-        assert input_data[0] == quartile_rating
+        assert input_data[0] == quartile_rating.rating
 
     def test_quartile(
             self, input_data: tuple[RatingsType, RatingsType]) -> None:
